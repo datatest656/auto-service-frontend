@@ -1,0 +1,29 @@
+/* src/components/NewsContactSection.css */
+.news-contact-section {
+    padding: 20px;
+    background-color: #f8f8f8;
+    margin-top: 20px;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: space-around;
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.contact-details .contact-item {
+    text-align: center;
+    flex: 1;
+    padding: 0 10px;
+}
+
+.map-container {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 8px;
+}

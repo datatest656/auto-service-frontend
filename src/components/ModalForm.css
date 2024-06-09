@@ -1,0 +1,122 @@
+/* ModalForm.css */
+
+/* Стили для overlay */
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Стили для модального окна */
+.modal {
+    background-color: #fff;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 90%;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden; /* Для предотвращения выхода элементов за рамки */
+}
+
+/* Заголовок модального окна */
+.modal h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Описание под заголовком */
+.modal p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Форма внутри модального окна */
+.modal form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Стили для input полей */
+.modal .form-group input {
+    width: 100%; /* Занимает всю ширину родительского контейнера */
+    padding: 15px; /* Увеличенный padding */
+    border: 1px solid #ddd; /* Светлая граница */
+    border-radius: 8px; /* Закругленные углы */
+    font-size: 16px; /* Размер шрифта */
+    box-sizing: border-box; /* Учитывать padding и border в общей ширине */
+    margin-bottom: 10px; /* Отступ снизу для пространства между полями */
+}
+
+/* Стили для чекбокса и текста */
+.modal .form-group-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Пробел между чекбоксом и текстом */
+    margin-top: 10px; /* Отступ сверху */
+    margin-bottom: 15px; /* Отступ снизу */
+}
+
+.modal .form-group-checkbox input {
+    margin: 0;
+}
+
+.modal .form-group-checkbox label {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Стили для кнопки отправки */
+.submit-button {
+    background-color: #ff7f50;
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #e66f41;
+}
+
+/* Стили для кнопки закрытия */
+.close-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.close-button:hover {
+    color: #e66f41;
+}
+
+/* Стили для изображения */
+.modal-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    height: 200px;
+    object-fit: cover;
+}

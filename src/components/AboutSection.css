@@ -1,0 +1,54 @@
+/* src/components/AboutSection.css */
+
+/* Основной контейнер */
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #f9f9f9;
+    margin-top: 50px;
+}
+
+/* Контент "О компании" */
+.about-content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.about-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Профиль сотрудника */
+.employee-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 0 0 350px; /* Увеличенная фиксированная ширина для изображения сотрудника */
+}
+
+.employee-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+}
+
+.employee-info h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.employee-info p {
+    font-size: 16px;
+    color: #666;
+}

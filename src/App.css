@@ -1,11 +1,29 @@
 .App {
   text-align: center;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+body {
+  background-color: #111;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -36,3 +54,4 @@
     transform: rotate(360deg);
   }
 }
+

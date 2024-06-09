@@ -1,0 +1,82 @@
+/* src/components/pages/NewsPage.css */
+
+.news-page {
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.news-item {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.news-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.news-content {
+    flex: 1;
+}
+
+.news-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.news-content p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.more-button {
+    background-color: #f05a28;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.more-button:hover {
+    background-color: #d04e25;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: space-around;
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.contact-details .contact-item {
+    flex: 1;
+    text-align: center;
+}
+
+.map-container {
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+}

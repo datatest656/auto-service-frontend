@@ -1,0 +1,64 @@
+/* src/components/ContactSection.css */
+
+.contact-section {
+    background-color: #111;
+    color: #fff;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
+
+.contact-details h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact-details p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.contact-details .contact-item {
+    text-align: center;
+    padding: 20px;
+    flex: 1;
+}
+
+.contact-details .contact-item:not(:last-child) {
+    border-right: 1px solid #333;
+}
+
+.map-container {
+    width: 100%;
+    max-width: 1200px;
+    height: 300px;
+    margin-bottom: 30px;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #888;
+}
