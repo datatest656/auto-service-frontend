@@ -32,7 +32,7 @@ const ServiceSection: React.FC<ServiceSectionProps> = ({ openModal }) => {
     const [error, setError] = React.useState<string | null>(null);
 
     React.useEffect(() => {
-        fetch('http://localhost:8080/api/services')
+        fetch('http://51.20.253.114:80/api/services')
             .then(response => response.json())
             .then(data => {
                 setServices(data.data);

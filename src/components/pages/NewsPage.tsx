@@ -29,7 +29,7 @@ const NewsPage: React.FC = () => {
     const [apiNews, setApiNews] = useState(newsData);
 
     useEffect(() => {
-        fetch('http://localhost:8080/api/news')
+        fetch('http://51.20.253.114:80/api/news')
             .then(response => response.json())
             .then(data => {
                 // Объединяем статические новости с новостями из API

@@ -15,7 +15,7 @@ const NewsList: React.FC = () => {
     const [news, setNews] = useState<News[]>([]);
 
     useEffect(() => {
-        fetch('http://localhost:8080/api/news')
+        fetch('http://51.20.253.114:80/api/news')
             .then(response => response.json())
             .then(data => setNews(data.data))
             .catch(error => console.error('Error fetching news:', error));

@@ -16,7 +16,7 @@ const AboutSection: React.FC = () => {
     const [employee, setEmployee] = useState<Employee | null>(null);
 
     useEffect(() => {
-        fetch('http://localhost:8080/api/home')
+        fetch('http://51.20.253.114:80/api/home')
             .then(response => response.json())
             .then(data => setEmployee(data.data[0])) // Предполагается, что первый объект - это нужный сотрудник
             .catch(error => console.error('Ошибка при загрузке данных о сотруднике:', error));

@@ -15,7 +15,7 @@ const NewsList: React.FC = () => {
     const [news, setNews] = useState<NewsItem[]>([]);
 
     useEffect(() => {
-        axios.get('http://localhost:8080/api/news')
+        axios.get('http://51.20.253.114:80/api/news')
             .then(response => {
                 setNews(response.data.data);
             })

@@ -43,7 +43,7 @@ const ModalForm: React.FC<ModalFormProps> = ({ isOpen, onRequestClose, serviceId
         };
 
         try {
-            const response = await fetch('http://localhost:8080/api/clients', {
+            const response = await fetch('http://51.20.253.114:80/api/clients', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
